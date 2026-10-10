@@ -1,0 +1,248 @@
+{
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Overview of your platform's activity.",
+    "thisWeek": "this week",
+    "needsAttention": "Needs attention",
+    "allClear": "All clear",
+    "stats": {
+      "users": "Total users",
+      "posts": "Total posts",
+      "comments": "Total comments",
+      "pendingReports": "Pending reports"
+    },
+    "range": { "label": "Time range" },
+    "charts": {
+      "signups": "New users (last 30 days)",
+      "content": "Content activity (last 30 days)",
+      "reportsByReason": "Reports by reason"
+    },
+    "series": {
+      "users": "New users",
+      "posts": "Posts",
+      "comments": "Comments",
+      "reports": "Reports"
+    },
+    "recentActivity": {
+      "title": "Recent activity",
+      "empty": "Nothing has happened yet.",
+      "signedUp": "signed up",
+      "posted": "posted",
+      "reported": "reported a {{type}}"
+    }
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "users": "Users",
+    "posts": "Posts",
+    "comments": "Comments",
+    "reports": "Reports",    
+    "group": { "main": "Main" }
+  },
+  "common": {
+    "search": "Search…",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "deleting": "Deleting…",
+    "error": "Something went wrong",
+    "previous": "Previous",    
+    "next": "Next",
+    "noResults": "No results.",
+    "loading": "Loading…",
+    "saving": "Saving…",
+    "optional": "optional",
+    "unknownUser": "Unknown user",
+    "searchPlaceholder": "Search or jump to…"
+  },
+    "pagination": {
+    "page": "Page {{current}} of {{total}}",
+    "rowsPerPage": "Rows per page",
+    "sort": { "asc": "Ascending", "desc": "Descending" }    
+  },  
+  "search": {
+    "typeToSearch": "Type at least 2 characters…",
+    "groups": {
+      "navigation": "Navigation",
+      "user": "Users",
+      "post": "Posts",
+      "comment": "Comments"
+    }
+  },
+  "auth": {
+    "title": "AuthNest Admin",
+    "subtitle": "Sign in to continue",
+    "email": "Email",
+    "password": "Password",
+    "rememberMe": "Keep me signed in for 30 days",
+    "signIn": "Sign in",
+    "signingIn": "Signing in…",
+    "welcomeBack": "Welcome back, {{name}}",
+    "loginFailed": "Login failed",
+    "logout": "Log out",
+    "signedOut": "Signed out",
+    "signingOut": "Signing out…",
+    "logoutConfirmTitle": "Sign out?",
+    "logoutConfirmDescription": "You'll need to sign in again to access the dashboard."
+  },
+  "users": {
+    "title": "Users",
+    "subtitle": "Manage user accounts and roles.",
+    "searchPlaceholder": "Search by name or email…",
+    "filter": {
+      "all": "All roles",
+      "user": "Users",
+      "admin": "Admins"
+    },
+    "columns": {
+      "name": "Name",
+      "email": "Email",
+      "role": "Role",
+      "verified": "Verified",
+      "joined": "Joined"
+    },
+    "role": {
+      "user": "User",
+      "admin": "Admin"
+    },
+    "verified": {
+      "yes": "Verified",
+      "no": "Unverified"
+    },
+    "promote": "Promote to admin",
+    "demote": "Demote to user",
+    "promoted": "{{name}} is now an admin",
+    "demoted": "{{name}} is now a user",
+    "delete": "Delete user",
+    "deleteConfirmTitle": "Delete this user?",
+    "deleteConfirmDescription": "This will permanently delete {{name}} and all their content. This cannot be undone.",
+    "deleted": "User deleted",
+    "empty": "No users found.",
+    "loading": "Loading users…",
+    "ban": "Ban user",
+    "unban": "Unban user",
+    "banned": "Banned",
+    "bannedToast": "{{name}} has been banned",
+    "unbannedToast": "{{name}} has been unbanned",
+    "banConfirmTitle": "Ban {{name}}?",
+    "banConfirmDescription": "The user will not be able to log in or use the app. Existing content stays visible. You can unban them later.",
+    "banReason": "Reason",
+    "banReasonPlaceholder": "Optional context for the ban record…"
+  },
+  "posts": {
+    "title": "Posts",
+    "subtitle": "Manage and moderate user posts.",
+    "searchPlaceholder": "Search by title or content…",
+    "untitled": "Untitled",
+    "empty": "No posts found.",
+    "deleted": "Post deleted",
+    "delete": "Delete post",
+    "deleteConfirmTitle": "Delete this post?",
+    "deleteConfirmDescription": "This will permanently delete the post along with all its comments, reactions, and shares. This cannot be undone.",
+    "viewOnSite": "View on site",
+    "columns": {
+      "author": "Author",
+      "title": "Title",
+      "excerpt": "Content",
+      "privacy": "Privacy",
+      "reactions": "Reactions",
+      "comments": "Comments",
+      "created": "Created"
+    },
+    "filter": {
+      "all": "All privacy"
+    },
+    "privacy": {
+      "PUBLIC": "Public",
+      "FRIENDS": "Friends",
+      "ONLY_ME": "Only me",
+      "CUSTOM": "Custom"
+    }
+  },
+  "comments": {
+    "title": "Comments",
+    "subtitle": "Moderate user comments across all posts.",
+    "searchPlaceholder": "Search comment content…",
+    "postIdPlaceholder": "Filter by post ID…",
+    "empty": "No comments found.",
+    "deleted": "Comment deleted",
+    "delete": "Delete comment",
+    "deleteConfirmTitle": "Delete this comment?",
+    "deleteConfirmDescription": "This will permanently delete the comment and all of its replies. This cannot be undone.",
+    "viewPost": "View post",
+    "columns": {
+      "author": "Author",
+      "content": "Comment",
+      "post": "Post",
+      "reactions": "Reactions",
+      "replies": "Replies",
+      "created": "Created"
+    }
+  },
+  "reports": {
+    "title": "Reports",
+    "subtitle": "Review user reports across posts, comments, and users.",
+    "empty": "No reports found.",
+    "targetDeleted": "Target deleted",
+    "viewTarget": "View target",
+    "markReviewed": "Mark as reviewed",
+    "markActioned": "Mark as actioned",
+    "dismiss": "Dismiss report",
+    "deleteTarget": "Delete {{type}}",
+    "updated": "Report updated",
+    "deleted": "{{type}} deleted",
+    "banUser": "Ban user",
+    "statusUpdateFailed": "User banned, but report status could not be updated",
+    "filter": {
+      "statusAll": "All statuses",
+      "typeAll": "All types"
+    },
+    "targetType": {
+      "POST": "Post",
+      "COMMENT": "Comment",
+      "USER": "User"
+    },
+    "status": {
+      "PENDING": "Pending",
+      "REVIEWED": "Reviewed",
+      "ACTIONED": "Actioned",
+      "DISMISSED": "Dismissed"
+    },
+    "reason": {
+      "SPAM": "Spam",
+      "HARASSMENT": "Harassment",
+      "HATE_SPEECH": "Hate speech",
+      "VIOLENCE": "Violence",
+      "NUDITY": "Nudity",
+      "FALSE_INFO": "False info",
+      "COPYRIGHT": "Copyright",
+      "IMPERSONATION": "Impersonation",
+      "OTHER": "Other"
+    },
+    "groupByTarget": "Toggle grouping",
+    "grouped": "Grouped",
+    "flat": "Flat",
+    "columns": {
+      "type": "Type",
+      "target": "Target",
+      "reportCount": "Reports",
+      "latestReason": "Latest reason",
+      "firstReported": "First reported",
+      "reporter": "Reporter",
+      "reason": "Reason",
+      "status": "Status",
+      "created": "Reported"
+    },    
+    "confirm": {
+      "reviewedTitle": "Mark this report as reviewed?",
+      "reviewedDescription": "Use this when you've examined the content and found no violation. The content stays visible.",
+      "actionedTitle": "Mark this report as actioned?",
+      "actionedDescription": "Use this when you've handled the report outside the admin panel (e.g. a private warning). The content stays visible.",
+      "dismissedTitle": "Dismiss this report?",
+      "dismissedDescription": "Use this when the report is invalid or frivolous.",
+      "deleteTitle": "Delete the reported content?",
+      "deleteDescription": "This will permanently delete the {{type}} and all related data, including this report. This action cannot be undone.",
+      "banTitle": "Ban this user?",
+      "banDescription": "The user will not be able to log in or use the app. The report will be marked as actioned. You can unban them later."
+    }
+  }
+}

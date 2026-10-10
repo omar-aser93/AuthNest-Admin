@@ -1,0 +1,248 @@
+{
+  "dashboard": {
+    "title": "لوحة التحكم",
+    "subtitle": "نظرة عامة على نشاط المنصة.",
+    "thisWeek": "هذا الأسبوع",
+    "needsAttention": "تحتاج مراجعة",
+    "allClear": "لا يوجد جديد",
+    "stats": {
+      "users": "إجمالي المستخدمين",
+      "posts": "إجمالي المنشورات",
+      "comments": "إجمالي التعليقات",
+      "pendingReports": "بلاغات معلّقة"
+    },
+    "range": { "label": "الفترة الزمنية" },
+    "charts": {
+      "signups": "المستخدمون الجدد (آخر ٣٠ يوماً)",
+      "content": "نشاط المحتوى (آخر ٣٠ يوماً)",
+      "reportsByReason": "البلاغات حسب السبب"
+    },
+    "series": {
+      "users": "المستخدمون الجدد",
+      "posts": "المنشورات",
+      "comments": "التعليقات",
+      "reports": "البلاغات"
+    },
+    "recentActivity": {
+      "title": "النشاط الأخير",
+      "empty": "لم يحدث شيء بعد.",
+      "signedUp": "انضم",
+      "posted": "نشر",
+      "reported": "أبلغ عن {{type}}"
+    }
+  },
+  "nav": {
+    "dashboard": "لوحة التحكم",
+    "users": "المستخدمون",
+    "posts": "المنشورات",
+    "comments": "التعليقات",
+    "reports": "البلاغات",
+    "group": { "main": "الرئيسية" }
+  },
+  "common": {
+    "search": "بحث…",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "deleting": "جارٍ الحذف…",
+    "error": "حدث خطأ ما",
+    "previous": "السابق",
+    "next": "التالي",
+    "noResults": "لا يوجد نتائج.",
+    "loading": "جارٍ التحميل…",
+    "saving": "جارٍ الحفظ…",
+    "optional": "اختياري",
+    "unknownUser": "مستخدم غير معروف",
+    "searchPlaceholder": "ابحث أو انتقل إلى…"
+  },
+  "pagination": {
+    "page": "الصفحة {{current}} من {{total}}",
+    "rowsPerPage": "عدد الصفوف في الصفحة",
+    "sort": { "asc": "ترتيب تصاعدي", "desc": "ترتيب تنازلي" }    
+  },
+  "search": {
+    "typeToSearch": "اكتب حرفين على الأقل…",
+    "groups": {
+      "navigation": "التنقل",
+      "user": "المستخدمون",
+      "post": "المنشورات",
+      "comment": "التعليقات"
+    }
+  },
+  "auth": {
+    "title": "AuthNest Admin",
+    "subtitle": "سجّل الدخول للمتابعة",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "rememberMe": "ابقني مسجّلاً لمدة ٣٠ يوماً",
+    "signIn": "تسجيل الدخول",
+    "signingIn": "جارٍ تسجيل الدخول…",
+    "welcomeBack": "أهلاً بعودتك، {{name}}",
+    "loginFailed": "فشل تسجيل الدخول",
+    "logout": "تسجيل الخروج",
+    "signedOut": "تم تسجيل الخروج",
+    "signingOut": "جارٍ تسجيل الخروج…",
+    "logoutConfirmTitle": "تسجيل الخروج؟",
+    "logoutConfirmDescription": "ستحتاج إلى تسجيل الدخول مرة أخرى للوصول إلى لوحة التحكم."
+  },
+  "users": {
+    "title": "المستخدمون",
+    "subtitle": "إدارة حسابات المستخدمين والأدوار.",
+    "searchPlaceholder": "ابحث بالاسم أو البريد الإلكتروني…",
+    "filter": {
+      "all": "كل الأدوار",
+      "user": "المستخدمون",
+      "admin": "المشرفون"
+    },
+    "columns": {
+      "name": "الاسم",
+      "email": "البريد الإلكتروني",
+      "role": "الدور",
+      "verified": "التوثيق",
+      "joined": "تاريخ الانضمام"
+    },
+    "role": {
+      "user": "مستخدم",
+      "admin": "مشرف"
+    },
+    "verified": {
+      "yes": "موثّق",
+      "no": "غير موثّق"
+    },
+    "promote": "ترقية إلى مشرف",
+    "demote": "تخفيض إلى مستخدم",
+    "promoted": "{{name}} أصبح مشرفاً",
+    "demoted": "{{name}} أصبح مستخدماً",
+    "delete": "حذف المستخدم",
+    "deleteConfirmTitle": "حذف هذا المستخدم؟",
+    "deleteConfirmDescription": "سيتم حذف {{name}} وكل محتواه نهائياً. لا يمكن التراجع عن هذا الإجراء.",
+    "deleted": "تم حذف المستخدم",
+    "empty": "لا يوجد مستخدمون.",
+    "loading": "جارٍ تحميل المستخدمين…",
+    "ban": "حظر المستخدم",
+    "unban": "رفع الحظر",
+    "banned": "محظور",
+    "bannedToast": "تم حظر {{name}}",
+    "unbannedToast": "تم رفع الحظر عن {{name}}",
+    "banConfirmTitle": "حظر {{name}}؟",
+    "banConfirmDescription": "لن يتمكن المستخدم من تسجيل الدخول أو استخدام التطبيق. يبقى محتواه الحالي مرئياً. يمكنك رفع الحظر لاحقاً.",
+    "banReason": "السبب",
+    "banReasonPlaceholder": "سياق اختياري لسجل الحظر…"
+  },
+  "posts": {
+    "title": "المنشورات",
+    "subtitle": "إدارة ومراجعة منشورات المستخدمين.",
+    "searchPlaceholder": "ابحث في العنوان أو المحتوى…",
+    "untitled": "بدون عنوان",
+    "empty": "لا يوجد منشورات.",
+    "deleted": "تم حذف المنشور",
+    "delete": "حذف المنشور",
+    "deleteConfirmTitle": "حذف هذا المنشور؟",
+    "deleteConfirmDescription": "سيتم حذف المنشور بشكل نهائي مع جميع التعليقات والتفاعلات والمشاركات. لا يمكن التراجع عن هذا الإجراء.",
+    "viewOnSite": "عرض في الموقع",
+    "columns": {
+      "author": "الكاتب",
+      "title": "العنوان",
+      "excerpt": "المحتوى",
+      "privacy": "الخصوصية",
+      "reactions": "التفاعلات",
+      "comments": "التعليقات",
+      "created": "تاريخ الإنشاء"
+    },
+    "filter": {
+      "all": "كل الخصوصيات"
+    },
+    "privacy": {
+      "PUBLIC": "عام",
+      "FRIENDS": "الأصدقاء",
+      "ONLY_ME": "أنا فقط",
+      "CUSTOM": "مخصص"
+    }
+  },
+  "comments": {
+    "title": "التعليقات",
+    "subtitle": "مراجعة تعليقات المستخدمين في جميع المنشورات.",
+    "searchPlaceholder": "ابحث في محتوى التعليق…",
+    "postIdPlaceholder": "تصفية حسب معرّف المنشور…",
+    "empty": "لا يوجد تعليقات.",
+    "deleted": "تم حذف التعليق",
+    "delete": "حذف التعليق",
+    "deleteConfirmTitle": "حذف هذا التعليق؟",
+    "deleteConfirmDescription": "سيتم حذف التعليق بشكل نهائي مع جميع الردود. لا يمكن التراجع عن هذا الإجراء.",
+    "viewPost": "عرض المنشور",
+    "columns": {
+      "author": "الكاتب",
+      "content": "التعليق",
+      "post": "المنشور",
+      "reactions": "التفاعلات",
+      "replies": "الردود",
+      "created": "تاريخ الإنشاء"
+    }
+  },
+  "reports": {
+    "title": "البلاغات",
+    "subtitle": "مراجعة بلاغات المستخدمين عبر المنشورات والتعليقات والمستخدمين.",
+    "empty": "لا توجد بلاغات.",
+    "targetDeleted": "المحتوى محذوف",
+    "viewTarget": "عرض المحتوى",
+    "markReviewed": "تحديد كمُراجَع",
+    "markActioned": "تحديد كإجراء متخذ",
+    "dismiss": "تجاهل البلاغ",
+    "deleteTarget": "حذف {{type}}",
+    "updated": "تم تحديث البلاغ",
+    "deleted": "تم حذف {{type}}",
+    "banUser": "حظر المستخدم",
+    "statusUpdateFailed": "تم حظر المستخدم، لكن تعذر تحديث حالة البلاغ",
+    "filter": {
+      "statusAll": "كل الحالات",
+      "typeAll": "كل الأنواع"
+    },
+    "targetType": {
+      "POST": "المنشور",
+      "COMMENT": "التعليق",
+      "USER": "المستخدم"
+    },
+    "status": {
+      "PENDING": "قيد الانتظار",
+      "REVIEWED": "تمت المراجعة",
+      "ACTIONED": "تم اتخاذ إجراء",
+      "DISMISSED": "متجاهل"
+    },
+    "reason": {
+      "SPAM": "بريد مزعج",
+      "HARASSMENT": "تحرش",
+      "HATE_SPEECH": "خطاب كراهية",
+      "VIOLENCE": "عنف",
+      "NUDITY": "محتوى جنسي",
+      "FALSE_INFO": "معلومات كاذبة",
+      "COPYRIGHT": "انتهاك حقوق النشر",
+      "IMPERSONATION": "انتحال شخصية",
+      "OTHER": "أخرى"
+    },
+    "groupByTarget": "تبديل التجميع",
+    "grouped": "مجمّع",
+    "flat": "مسطّح",
+    "columns": {
+      "type": "النوع",
+      "target": "المحتوى",
+      "reportCount": "البلاغات",
+      "latestReason": "أحدث سبب",
+      "firstReported": "أول إبلاغ",
+      "reporter": "المُبلِّغ",
+      "reason": "السبب",
+      "status": "الحالة",
+      "created": "تاريخ الإبلاغ"
+    },
+    "confirm": {
+      "reviewedTitle": "تحديد البلاغ كمُراجَع؟",
+      "reviewedDescription": "استخدم هذا بعد فحص المحتوى دون العثور على مخالفة. يبقى المحتوى مرئياً.",
+      "actionedTitle": "تحديد البلاغ كإجراء متخذ؟",
+      "actionedDescription": "استخدم هذا إذا تعاملت مع البلاغ خارج لوحة التحكم (مثل تحذير خاص). يبقى المحتوى مرئياً.",
+      "dismissedTitle": "تجاهل هذا البلاغ؟",
+      "dismissedDescription": "استخدم هذا إذا كان البلاغ غير صالح أو كيدي.",
+      "deleteTitle": "حذف المحتوى المُبلَّغ عنه؟",
+      "deleteDescription": "سيتم حذف الـ{{type}} بشكل نهائي مع جميع البيانات المرتبطة به، بما في ذلك هذا البلاغ. لا يمكن التراجع عن هذا الإجراء.",
+      "banTitle": "حظر هذا المستخدم؟",
+      "banDescription": "لن يتمكن المستخدم من تسجيل الدخول أو استخدام التطبيق. سيتم تحديد البلاغ كإجراء متخذ. يمكنك رفع الحظر لاحقاً."
+    }
+  }
+}
