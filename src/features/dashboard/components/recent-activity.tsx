@@ -81,7 +81,7 @@ function ActivityRow({
         })}
       </>
     );
-    onClick = () => onNavigate({ to: "/reports", search: { page: 1, limit: 20, sort: "createdAt", order: "desc" } });
+    onClick = () => onNavigate({ to: "/reports", search: { page: 1, limit: 20, sort: "createdAt", order: "desc", groupBy: "flat" } });
   }
 
   return (
