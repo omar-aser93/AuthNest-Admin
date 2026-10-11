@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/v1/(.*)",
+      "destination": "https://authnest-backend-v0ty.onrender.com/api/v1/$1"
+    }
+  ]
+}
