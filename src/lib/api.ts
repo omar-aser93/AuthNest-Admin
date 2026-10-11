@@ -32,9 +32,8 @@ async function refreshSession(): Promise<void> {
     refreshPromise = axios
       .post(`${baseURL}/auth/refresh-token`, null, { withCredentials: true })
       .then(() => undefined)
-      .finally(() => {
-        refreshPromise = null;
-      });
+      .catch((e) => { if (e?.response?.status !== 409) throw e; }) 
+      .finally(() => { refreshPromise = null; });
   }
   return refreshPromise;
 }
@@ -45,6 +44,7 @@ api.interceptors.response.use(
     const original = error.config as (InternalAxiosRequestConfig & { _retried?: boolean }) | undefined;
     const status = error.response?.status;
     const url = original?.url ?? "";
+    const message = (error.response?.data as { message?: string } | undefined)?.message ?? "";
 
     // Don't attempt refresh on auth routes — those 401s are real auth failures.
     const isAuthRoute = url.includes("/auth/");
@@ -59,13 +59,29 @@ api.interceptors.response.use(
       }
     }
 
-    const message =
-      (error.response?.data as { message?: string } | undefined)?.message ??
-      "Something went wrong. Please try again.";
+    // Session is dead (or account was suspended mid-session).
+    // Three exclusions to prevent an infinite reload loop on /login:
+    //   - /users/me:   the root guard already redirects when it returns null
+    //   - /login:      redirecting to the page we're on would reload in a loop
+    //   - generic 403: CSRF failures and "Admin access required" are not dead
+    //                  sessions — only an explicit "suspended" 403 is
+    const isMe = url.includes("/users/me");
+    const onLogin = typeof window !== "undefined" && window.location.pathname.startsWith("/login");
+    const suspended = status === 403 && /suspended/i.test(message);
 
-    return Promise.reject(new ApiError(message, error.response?.status));
+    if ((status === 401 || suspended) && !isAuthRoute && !isMe && !onLogin) {
+      if (typeof window !== "undefined") {
+        window.location.assign("/login");
+      }
+    }
+
+    const finalMessage = message || "Something went wrong. Please try again.";
+
+    return Promise.reject(new ApiError(finalMessage, status));
   },
 );
+
+
 
 // ─── CSRF bootstrap ──────────────────────────────────────────────────────────
 // Call once on app boot. If csrfToken cookie is missing, fetch it from backend.
